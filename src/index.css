@@ -1,0 +1,88 @@
+/* src/index.css */
+:root {
+  --sk-blue: #1a3b8b;
+  --sk-orange: #f38131;
+  --sk-light: #f8f9fa;
+  --sk-dark: #111827;
+  --laxmi-green: #0d6840; /* Original Store Green */
+  --laxmi-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--sk-light);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6, .fw-bold {
+  font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+/* StoreKing Theme Overrides */
+.text-sk-blue { color: var(--sk-blue) !important; }
+.bg-sk-blue { background-color: var(--sk-blue) !important; }
+.text-sk-orange { color: var(--sk-orange) !important; }
+.bg-sk-orange { background-color: var(--sk-orange) !important; }
+.text-laxmi-green { color: var(--laxmi-green) !important; }
+.bg-laxmi-green { background-color: var(--laxmi-green) !important; }
+
+.btn-sk-orange {
+  background-color: var(--sk-orange);
+  color: white;
+  border: none;
+}
+.btn-sk-orange:hover {
+  background-color: #e27529;
+  color: white;
+}
+
+.btn-sk-blue {
+  background-color: var(--sk-blue);
+  color: white;
+  border: none;
+}
+.btn-sk-blue:hover {
+  background-color: #142f70;
+  color: white;
+}
+
+/* Custom Typography Utilities */
+.font-sans {
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.transition-all {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.hover-opacity:hover {
+  opacity: 1 !important;
+}
+
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+}
+
